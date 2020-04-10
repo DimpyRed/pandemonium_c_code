@@ -6,6 +6,12 @@
 #define UNTITLED_PIECE_H
 
 
+enum Piece_type{
+    standard,
+};
+
+
+
 
 class Piece{
 public:
