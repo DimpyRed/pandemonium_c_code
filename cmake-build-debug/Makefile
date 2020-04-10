@@ -123,6 +123,33 @@ Pandemonium_c_code/fast:
 	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/build
 .PHONY : Pandemonium_c_code/fast
 
+GameState.o: GameState.cpp.o
+
+.PHONY : GameState.o
+
+# target to build an object file
+GameState.cpp.o:
+	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.o
+.PHONY : GameState.cpp.o
+
+GameState.i: GameState.cpp.i
+
+.PHONY : GameState.i
+
+# target to preprocess a source file
+GameState.cpp.i:
+	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.i
+.PHONY : GameState.cpp.i
+
+GameState.s: GameState.cpp.s
+
+.PHONY : GameState.s
+
+# target to generate assembly for a file
+GameState.cpp.s:
+	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.s
+.PHONY : GameState.cpp.s
+
 Piece.o: Piece.cpp.o
 
 .PHONY : Piece.o
@@ -150,33 +177,6 @@ Piece.cpp.s:
 	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.s
 .PHONY : Piece.cpp.s
 
-library.o: library.cpp.o
-
-.PHONY : library.o
-
-# target to build an object file
-library.cpp.o:
-	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/library.cpp.o
-.PHONY : library.cpp.o
-
-library.i: library.cpp.i
-
-.PHONY : library.i
-
-# target to preprocess a source file
-library.cpp.i:
-	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/library.cpp.i
-.PHONY : library.cpp.i
-
-library.s: library.cpp.s
-
-.PHONY : library.s
-
-# target to generate assembly for a file
-library.cpp.s:
-	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/library.cpp.s
-.PHONY : library.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Pandemonium_c_code"
 	@echo "... edit_cache"
+	@echo "... GameState.o"
+	@echo "... GameState.i"
+	@echo "... GameState.s"
 	@echo "... Piece.o"
 	@echo "... Piece.i"
 	@echo "... Piece.s"
-	@echo "... library.o"
-	@echo "... library.i"
-	@echo "... library.s"
 .PHONY : help
 
 
