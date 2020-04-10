@@ -19,7 +19,7 @@ public:
 
 
 private:
-    std::vector<Piece> pieces;
+    std::vector<Piece *> pieces;
 };
 
 
