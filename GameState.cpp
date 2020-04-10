@@ -28,3 +28,14 @@ bool GameState::position_empty(int pos_x, int pos_y) {
 
     return false;
 }
+
+
+void GameState::movePieceAbsolute(Piece *p, int pos_x, int pos_y) {
+    p->x = pos_x;
+    p->y = pos_y;
+}
+
+void GameState::movePieceRelative(Piece *p, int move_x, int move_y) {
+    p->x += move_x;
+    p->y += move_y;
+}
