@@ -15,6 +15,7 @@ class GameState{
 public:
     void addPiece(int pos_x, int pos_y, int team, int type);
     void addPiece(int pos_x, int pos_y, int team);
+    bool position_empty(int pos_x, int pos_y);
 
 
 private:
