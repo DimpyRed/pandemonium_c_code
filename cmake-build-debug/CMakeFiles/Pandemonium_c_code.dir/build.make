@@ -43,10 +43,10 @@ RM = /home/david/Programs/clion-2019.2.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code"
+CMAKE_SOURCE_DIR = "/home/david/Programs/my games/Pandemonium/pandemonium_c_code"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Pandemonium_c_code.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/Pandemonium_c_code.dir/flags.make
 
 CMakeFiles/Pandemonium_c_code.dir/library.cpp.o: CMakeFiles/Pandemonium_c_code.dir/flags.make
 CMakeFiles/Pandemonium_c_code.dir/library.cpp.o: ../library.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pandemonium_c_code.dir/library.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pandemonium_c_code.dir/library.cpp.o -c "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/library.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pandemonium_c_code.dir/library.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pandemonium_c_code.dir/library.cpp.o -c "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/library.cpp"
 
 CMakeFiles/Pandemonium_c_code.dir/library.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pandemonium_c_code.dir/library.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/library.cpp" > CMakeFiles/Pandemonium_c_code.dir/library.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/library.cpp" > CMakeFiles/Pandemonium_c_code.dir/library.cpp.i
 
 CMakeFiles/Pandemonium_c_code.dir/library.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pandemonium_c_code.dir/library.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/library.cpp" -o CMakeFiles/Pandemonium_c_code.dir/library.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/library.cpp" -o CMakeFiles/Pandemonium_c_code.dir/library.cpp.s
 
 CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o: CMakeFiles/Pandemonium_c_code.dir/flags.make
 CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o: ../Piece.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o -c "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/Piece.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o -c "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.cpp"
 
 CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/Piece.cpp" > CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.cpp" > CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.i
 
 CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/Piece.cpp" -o CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.cpp" -o CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.s
 
 # Object files for target Pandemonium_c_code
 Pandemonium_c_code_OBJECTS = \
@@ -95,7 +95,7 @@ Pandemonium_c_code: CMakeFiles/Pandemonium_c_code.dir/library.cpp.o
 Pandemonium_c_code: CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o
 Pandemonium_c_code: CMakeFiles/Pandemonium_c_code.dir/build.make
 Pandemonium_c_code: CMakeFiles/Pandemonium_c_code.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Pandemonium_c_code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Pandemonium_c_code"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pandemonium_c_code.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/Pandemonium_c_code.dir/clean:
 .PHONY : CMakeFiles/Pandemonium_c_code.dir/clean
 
 CMakeFiles/Pandemonium_c_code.dir/depend:
-	cd "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code" "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code" "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug" "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug" "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Pandemonium_c_code.dir/depend
 

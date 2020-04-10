@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/." 
+CXX_INCLUDES = -I"/home/david/Programs/my games/Pandemonium/pandemonium_c_code/." 
 

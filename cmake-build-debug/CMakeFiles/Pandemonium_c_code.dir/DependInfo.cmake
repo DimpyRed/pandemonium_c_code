@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/Piece.cpp" "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o"
-  "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/library.cpp" "/home/david/Programs/my games/Pandemonium/Pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/library.cpp.o"
+  "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.cpp" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o"
+  "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/library.cpp" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/library.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
