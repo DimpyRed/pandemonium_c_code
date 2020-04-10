@@ -86,16 +86,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/GameState.cpp">
+			<Option target="Pandemonium_c_code"/>
+		</Unit>
+		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/GameState.h">
+			<Option target="Pandemonium_c_code"/>
+		</Unit>
 		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.cpp">
 			<Option target="Pandemonium_c_code"/>
 		</Unit>
 		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.h">
-			<Option target="Pandemonium_c_code"/>
-		</Unit>
-		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/library.cpp">
-			<Option target="Pandemonium_c_code"/>
-		</Unit>
-		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/library.h">
 			<Option target="Pandemonium_c_code"/>
 		</Unit>
 		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/CMakeLists.txt">

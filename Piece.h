@@ -12,7 +12,6 @@ enum Piece_type{
 
 
 
-
 class Piece{
 public:
     int x; //position
