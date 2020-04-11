@@ -8,6 +8,11 @@
 
 #include "Piece.h"
 #include <vector>
+#include "Position.h"
+
+
+//organized in counter-clockwise direction for your convenience
+const int ADJACENT_VECTORS[6][2] = {{1,0}, {0,1}, {-1, 1}, {-1, 0}, {0, -1}, {1, -1}};
 
 
 /*
@@ -23,10 +28,12 @@ public:
     bool position_empty(int pos_x, int pos_y);
     void movePieceAbsolute(Piece *p, int pos_x, int pos_y);
     void movePieceRelative(Piece *p, int move_x, int move_y);
+    std::vector<Position> getAdjacentSpaces(int pos_x, int pos_y);
 
 
 private:
     std::vector<Piece *> pieces;
+
 };
 
 

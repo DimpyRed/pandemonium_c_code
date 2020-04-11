@@ -18,6 +18,9 @@ public:
     int y; //position
     Piece(int pos_x, int pos_y, int my_team, int my_type);
 
+    int getTeam() {return team;};
+    int getType() {return type;};
+    
 private:
     int team; //enumerated
     int type; //enumerated,

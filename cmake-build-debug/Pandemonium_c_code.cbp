@@ -98,6 +98,9 @@
 		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.h">
 			<Option target="Pandemonium_c_code"/>
 		</Unit>
+		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/position.h">
+			<Option target="Pandemonium_c_code"/>
+		</Unit>
 		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
