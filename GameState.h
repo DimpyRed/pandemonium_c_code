@@ -30,6 +30,7 @@ public:
     void movePieceRelative(Piece *p, int move_x, int move_y);
     std::vector<Position> getAdjacentSpaces(int pos_x, int pos_y);
 
+
 private:
     std::vector<Piece *> pieces;
 
