@@ -29,7 +29,6 @@ bool GameState::position_empty(int pos_x, int pos_y) {
     return false;
 }
 
-
 void GameState::movePieceAbsolute(Piece *p, int pos_x, int pos_y) {
     p->x = pos_x;
     p->y = pos_y;
@@ -38,4 +37,17 @@ void GameState::movePieceAbsolute(Piece *p, int pos_x, int pos_y) {
 void GameState::movePieceRelative(Piece *p, int move_x, int move_y) {
     p->x += move_x;
     p->y += move_y;
+}
+
+
+
+std::vector<Position> GameState::getAdjacentSpaces(int pos_x, int pos_y) {
+
+    std::vector<Position> adjacencies;
+
+    for ( auto &v: ADJACENT_VECTORS){
+        adjacencies.emplace_back(Position(v[0], v[1]) );
+    }
+
+    return adjacencies;
 }
