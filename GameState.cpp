@@ -6,7 +6,7 @@
 
 void GameState::addPiece(int pos_x, int pos_y, int team) {
     pieces.emplace_back(
-            new Piece(pos_x, pos_x, team, Piece_type::standard)
+            new Piece(pos_x, pos_y, team, Piece_type::standard)
             );
 }
 
