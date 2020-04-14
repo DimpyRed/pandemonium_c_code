@@ -40,11 +40,11 @@ bool GameState::position_empty(int pos_x, int pos_y) {
 
     for (Piece *p : pieces){
         if ((p->x == pos_x) && (p->y == pos_y)){
-            return true;
+            return false;
         }
     }
 
-    return false;
+    return true;
 }
 
 
