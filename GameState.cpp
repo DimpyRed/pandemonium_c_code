@@ -58,12 +58,38 @@ void GameState::movePieceRelative(Piece *p, int move_x, int move_y) {
     p->y += move_y;
 }
 
+void GameState::movePieceUpLeft(Piece *p) {
+    p->x -= 1;
+    p->y += 1;
+}
+
+void GameState::movePieceUpRight(Piece *p) {
+    p->y += 1;
+}
+
+void GameState::movePieceLeft(Piece *p) {
+    p->x -= 1;
+}
+
+void GameState::movePieceRight(Piece *p) {
+    p->x += 1;
+}
+
+void GameState::movePieceDownLeft(Piece *p) {
+    p->y -= 1;
+}
+
+void GameState::movePieceDownRight(Piece *p) {
+    p->x += 1;
+    p->y -= 1;
+}
+
 std::vector<Piece*> GameState::pieceList() {
     return pieces;
 }
 
 bool GameState::onBoard(int x, int y) {
-    return (x >= 1 && x <= 5 && y >= 1 && y <= 5 && x + y <= 6); //corners are at (1,1), (1,5), (5,1)
+    return (x >= 1 && y >= 1 && x + y <= 6); //corners are at (1,1), (1,5), (5,1)
 }
 
 Piece* GameState::atLocation(int x, int y) {
