@@ -17,6 +17,8 @@ public:
     int x; //position
     int y; //position
     Piece(int pos_x, int pos_y, int my_team, int my_type);
+    int getTeam();
+    int getType();
 
     int getTeam() {return team;};
     int getType() {return type;};

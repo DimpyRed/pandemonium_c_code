@@ -12,3 +12,12 @@ Piece::Piece(int pos_x, int pos_y, int my_team, int my_type) {
     team = my_team;
     type = my_type;
 }
+
+
+int Piece::getTeam() {
+    return team;
+}
+
+int Piece::getType() {
+    return type;
+}
