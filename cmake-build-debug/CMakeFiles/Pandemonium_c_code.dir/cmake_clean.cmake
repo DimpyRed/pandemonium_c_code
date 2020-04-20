@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.obj"
-  "CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.obj"
+  "CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o"
+  "CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.o"
   "Pandemonium_c_code.pdb"
-  "Pandemonium_c_code.exe"
-  "Pandemonium_c_code.exe.manifest"
-  "libPandemonium_c_code.dll.a"
+  "Pandemonium_c_code"
 )
 
 # Per-language clean rules from dependency scanning.
