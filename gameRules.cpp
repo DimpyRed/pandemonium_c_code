@@ -38,10 +38,14 @@ GameState applyMove(GameState inputState, Move move){
                 break;
             if ( outputState.position_empty(move.position().x, move.position().y) )
                 break;
-            outputState.movePieceRelative( targetPiece, targetPiece->x - movingPiece->x,
-                                                        targetPiece->y - movingPiece->y);
-            break;
 
+            Position pushTo( targetPiece->x + (targetPiece->x - movingPiece->x),
+                             targetPiece->y + (targetPiece->y - movingPiece->y));
+            if ( !outputState.position_empty(pushTo.x, pushTo.y ))
+                break;
+
+            outputState.movePieceAbsolute(targetPiece, pushTo.x, pushTo.y );
+            break;
     }
 
 
