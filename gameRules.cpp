@@ -30,7 +30,10 @@ GameState applyMove(GameState inputState, Move move){
                 break;
 
             outputState.movePieceAbsolute(movingPiece, move.position().x, move.position().y);
-            if
+            if (!outputState.onBoard(movingPiece->x, movingPiece->y) ){
+                outputState.removePiece(movingPiece);
+                break;
+            }
             break;
         case MOVE_CODE::regular_push:
             if ( !outputState.areAdjacent( Position(movingPiece->x, movingPiece->y), move.position() )  )
@@ -46,6 +49,10 @@ GameState applyMove(GameState inputState, Move move){
                 break;
 
             outputState.movePieceAbsolute(targetPiece, pushTo.x, pushTo.y );
+            if (!outputState.onBoard(movingPiece->x, movingPiece->y)){
+                outputState.removePiece(targetPiece);
+                break;
+            }
             break;
     }
 
