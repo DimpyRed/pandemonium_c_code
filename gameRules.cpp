@@ -6,7 +6,7 @@
 #include "Piece.h"
 #include "Position.h"
 #include "GameState.h"
-
+#include <algorithm>
 
 
 /*
@@ -22,12 +22,19 @@ GameState applyMove(GameState inputState, Move move){
 
     switch(move.code()){
         case MOVE_CODE::regular_movement:
-            outputState.movePieceAbsolute(  move.piece(), move.position().x,    move.position().y  );
+            if ( !outputState.areAdjacent( Position(movingPiece->x, movingPiece->y), move.position() )  )
+                break;
+            if ( !outputState.pieceExists(movingPiece) )
+                break;
+            if ( !outputState.position_empty(move.position().x, move.position().y)  )
+                break;
+
+            outputState.movePieceAbsolute(move.piece(), move.position().x, move.position().y);
             break;
         case MOVE_CODE::regular_push:
 
-            outputState.movePieceRelative( targetPiece, targetPiece->x - move.piece()->x,
-                                                        targetPiece->y - move.piece()->y);
+            outputState.movePieceRelative( targetPiece, targetPiece->x - movingPiece->x,
+                                                        targetPiece->y - movingPiece->y);
             break;
 
     }

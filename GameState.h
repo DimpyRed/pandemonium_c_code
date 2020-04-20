@@ -27,10 +27,14 @@ public:
     ~GameState();
     void addPiece(int pos_x, int pos_y, int team, int type);
     void addPiece(int pos_x, int pos_y, int team);
+    void removePiece(Piece *p);
     bool position_empty(int pos_x, int pos_y);
     void movePieceAbsolute(Piece *p, int pos_x, int pos_y);
     void movePieceRelative(Piece *p, int move_x, int move_y);
     std::vector<Position> getAdjacentSpaces(int pos_x, int pos_y);
+    bool areAdjacent(Position pos_1, Position Pos_2);
+    bool pieceExists(Piece *p);
+
 
     void movePieceUpLeft(Piece *p);
     void movePieceUpRight(Piece *p);
