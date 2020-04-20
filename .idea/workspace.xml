@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72f5578b-5533-4115-b8f9-11d4fc2e3100" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gameRules.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gameRules.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameState.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameState.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +71,7 @@
       <workItem from="1587260653583" duration="47000" />
       <workItem from="1587261861908" duration="128000" />
       <workItem from="1587413796785" duration="3650000" />
-      <workItem from="1587418258159" duration="3416000" />
+      <workItem from="1587418258159" duration="4183000" />
     </task>
     <servers />
   </component>

@@ -17,8 +17,8 @@ might want to add an fstream as an output later. I'm not good with those though
 GameState applyMove(GameState inputState, Move move){
     GameState outputState = inputState;
 
-    Piece *movingPiece = move.piece();
-    Piece *targetPiece = outputState.atLocation(move.position().x, move.position().y);
+    Piece *movingPiece = outputState.correspondingPiece(move.piece(), inputState);
+    Piece *targetPiece = outputState.atLocation(move.position().x, move.position().y); //can be null
 
     switch(move.code()){
         case MOVE_CODE::regular_movement:
