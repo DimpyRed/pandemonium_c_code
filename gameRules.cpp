@@ -29,7 +29,8 @@ GameState applyMove(GameState inputState, Move move){
             if ( !outputState.position_empty(move.position().x, move.position().y)  )
                 break;
 
-            outputState.movePieceAbsolute(move.piece(), move.position().x, move.position().y);
+            outputState.movePieceAbsolute(movingPiece, move.position().x, move.position().y);
+            if
             break;
         case MOVE_CODE::regular_push:
             if ( !outputState.areAdjacent( Position(movingPiece->x, movingPiece->y), move.position() )  )
