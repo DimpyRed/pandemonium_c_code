@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/GameState.cpp" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.o"
   "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.cpp" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o"
+  "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/gameRules.cpp" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/gameRules.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -101,6 +101,9 @@
 		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Position.h">
 			<Option target="Pandemonium_c_code"/>
 		</Unit>
+		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/gameRules.cpp">
+			<Option target="Pandemonium_c_code"/>
+		</Unit>
 		<Unit filename="/home/david/Programs/my games/Pandemonium/pandemonium_c_code/move.h">
 			<Option target="Pandemonium_c_code"/>
 		</Unit>

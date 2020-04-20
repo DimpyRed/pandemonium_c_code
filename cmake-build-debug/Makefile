@@ -177,6 +177,33 @@ Piece.cpp.s:
 	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.s
 .PHONY : Piece.cpp.s
 
+gameRules.o: gameRules.cpp.o
+
+.PHONY : gameRules.o
+
+# target to build an object file
+gameRules.cpp.o:
+	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/gameRules.cpp.o
+.PHONY : gameRules.cpp.o
+
+gameRules.i: gameRules.cpp.i
+
+.PHONY : gameRules.i
+
+# target to preprocess a source file
+gameRules.cpp.i:
+	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/gameRules.cpp.i
+.PHONY : gameRules.cpp.i
+
+gameRules.s: gameRules.cpp.s
+
+.PHONY : gameRules.s
+
+# target to generate assembly for a file
+gameRules.cpp.s:
+	$(MAKE) -f CMakeFiles/Pandemonium_c_code.dir/build.make CMakeFiles/Pandemonium_c_code.dir/gameRules.cpp.s
+.PHONY : gameRules.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... Piece.o"
 	@echo "... Piece.i"
 	@echo "... Piece.s"
+	@echo "... gameRules.o"
+	@echo "... gameRules.i"
+	@echo "... gameRules.s"
 .PHONY : help
 
 
