@@ -8,6 +8,7 @@
 #include "GameState.h"
 
 
+
 /*
  * Accepts a well-formed Gamestate and Move, and applies the move. If the move is illegal, it returns back the
  * origional gameState and give a reason why the move is illegal
@@ -30,6 +31,5 @@ GameState applyMove(GameState inputState, Move move){
     }
 
 
-
-
+    return outputState;
 }
