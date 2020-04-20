@@ -11,6 +11,14 @@
 #include "Piece.h"
 #include "Position.h"
 
+
+//signifies the possible move codes for a piece
+enum MOVE_CODE{
+    regular_movement,
+    regular_push
+};
+
+
 class Move{
 public:
     Move(Piece *moving_piece, Position target_position, int move_code){
@@ -23,12 +31,6 @@ public:
     Position position(){ return  _position};
     int code(){return _code};
 
-
-    //signifies the possible move codes for a piece
-    enum MOVE_CODE{
-        regular_movement,
-        regular_push
-    };
 
 private:
     Piece *_piece;
