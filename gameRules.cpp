@@ -36,7 +36,7 @@ GameState applyMove(GameState inputState, Move move){
                 break;
             if ( !outputState.pieceExists(movingPiece) )
                 break;
-            if ( !outputState.pieceExists(targetPiece) )
+            if ( outputState.position_empty(move.position().x, move.position().y))
                 break;
 
             Position pushTo( targetPiece->x + (targetPiece->x - movingPiece->x),
