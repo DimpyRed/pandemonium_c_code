@@ -70,31 +70,6 @@ std::vector<Position> GameState::getAdjacentSpaces(int pos_x, int pos_y) {
     return adjacencies;
 }
 
-void GameState::movePieceUpLeft(Piece *p) {
-    p->x -= 1;
-    p->y += 1;
-}
-
-void GameState::movePieceUpRight(Piece *p) {
-    p->y += 1;
-}
-
-void GameState::movePieceLeft(Piece *p) {
-    p->x -= 1;
-}
-
-void GameState::movePieceRight(Piece *p) {
-    p->x += 1;
-}
-
-void GameState::movePieceDownLeft(Piece *p) {
-    p->y -= 1;
-}
-
-void GameState::movePieceDownRight(Piece *p) {
-    p->x += 1;
-    p->y -= 1;
-}
 
 std::vector<Piece*> GameState::pieceList() {
     return pieces;
@@ -108,6 +83,35 @@ Piece* GameState::atLocation(int x, int y) {
     for(int i = 0; i < pieces.size(); i++) {
         if(pieces[i]->x == x && pieces[i]->y == y)
             return pieces[i];
+    }
+    return nullptr;
+}
+
+void GameState::removePiece(Piece *p) {
+    for(int i = 0; i < pieces.size(); i++) {
+        if(pieces[i] == p) {
+            delete pieces[i];
+            pieces[i] = nullptr;
+            pieces.erase(pieces.begin() + i);
+            return;
+        }
+    }
+}
+
+bool GameState::pieceExists(Piece *p) {
+    return onBoard(p->x, p->y);
+}
+
+bool GameState::areAdjacent(Position pos_1, Position Pos_2) {
+    int dif = (pos_1.x + pos_1.y) - (Pos_2.x + Pos_2.y);
+    return (dif > -2 && dif < 2);
+}
+
+Piece* GameState::correspondingPiece(Piece *p, GameState other) {
+    for(int i = 0; i < other.pieces.size(); i++) {
+        if(other.pieces[i]->x == p->x && other.pieces[i]->y == p->y && other.pieces[i]->getType() == p->getType()
+            && other.pieces[i]->getTeam() == p->getTeam())
+            return other.pieces[i];
     }
     return nullptr;
 }

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/GameState.cpp" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.o"
-  "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/Piece.cpp" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.o"
-  "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/gameRules.cpp" "/home/david/Programs/my games/Pandemonium/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/gameRules.cpp.o"
+  "C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/GameState.cpp" "C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.obj"
+  "C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/Piece.cpp" "C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.obj"
+  "C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/gameRules.cpp" "C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/cmake-build-debug/CMakeFiles/Pandemonium_c_code.dir/gameRules.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -35,13 +35,6 @@ public:
     bool areAdjacent(Position pos_1, Position Pos_2);
     bool pieceExists(Piece *p);
 
-    void movePieceUpLeft(Piece *p);
-    void movePieceUpRight(Piece *p);
-    void movePieceLeft(Piece *p);
-    void movePieceRight(Piece *p);
-    void movePieceDownLeft(Piece *p);
-    void movePieceDownRight(Piece *p);
-
     std::vector<Piece*> pieceList();
     bool onBoard(int x, int y);
     Piece* atLocation(int x, int y);
