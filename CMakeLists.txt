@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(Pandemonium_c_code
         Piece.cpp
-        Piece.h GameState.cpp GameState.h Position.h move.h gameRules.cpp)
+        Piece.h GameState.cpp GameState.h Position.h move.h gameRules.cpp main.cpp)

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Okabi/Desktop/pandemonium_c_code/GameState.h
+Piece.h
+C:/Users/Okabi/Desktop/pandemonium_c_code/Piece.h
+vector
+-
+Position.h
+C:/Users/Okabi/Desktop/pandemonium_c_code/Position.h
+iostream
+-
+
+C:/Users/Okabi/Desktop/pandemonium_c_code/Piece.h
+
+C:/Users/Okabi/Desktop/pandemonium_c_code/Position.h
+
+C:/Users/Okabi/Desktop/pandemonium_c_code/main.cpp
+GameState.h
+C:/Users/Okabi/Desktop/pandemonium_c_code/GameState.h
+Piece.h
+C:/Users/Okabi/Desktop/pandemonium_c_code/Piece.h
+iostream
+-
+

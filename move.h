@@ -21,15 +21,15 @@ enum MOVE_CODE{
 
 class Move{
 public:
-    Move(Piece *moving_piece, Position target_position, int move_code){
+    Move(Piece *moving_piece, Position target_position, int move_code, Position position) : _position(position) {
         _piece = moving_piece;
         _position = target_position;
         _code = move_code;
     }
 
-    Piece *piece(){return _piece};
-    Position position(){ return  _position};
-    int code(){return _code};
+    Piece *piece(){return _piece;}
+    Position position(){ return  _position;}
+    int code(){return _code;}
 
 
 private:
