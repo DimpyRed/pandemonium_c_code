@@ -9,6 +9,7 @@
 #include "Piece.h"
 #include <vector>
 #include "Position.h"
+#include <iostream>
 
 
 //organized in counter-clockwise direction for your convenience
@@ -23,6 +24,7 @@ const int ADJACENT_VECTORS[6][2] = {{1,0}, {0,1}, {-1, 1}, {-1, 0}, {0, -1}, {1,
 
 class GameState{
 public:
+    GameState();
     GameState(const GameState& other);
     ~GameState();
     void addPiece(int pos_x, int pos_y, int team, int type);
@@ -39,6 +41,8 @@ public:
     bool onBoard(int x, int y);
     Piece* atLocation(int x, int y);
     Piece* correspondingPiece(Piece *p, GameState other);
+    std::string GameStateToStringConverter();
+    void printBoardInText();
 
 private:
     std::vector<Piece *> pieces;

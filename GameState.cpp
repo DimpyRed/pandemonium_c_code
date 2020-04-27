@@ -3,7 +3,9 @@
 //
 
 #include "GameState.h"
+GameState::GameState(){
 
+}
 GameState::GameState(const GameState &other) {
     for(int i = 0; i < other.pieces.size(); i++) {
         this->pieces.emplace_back(new Piece(
@@ -114,4 +116,50 @@ Piece* GameState::correspondingPiece(Piece *p, GameState other) {
             return other.pieces[i];
     }
     return nullptr;
+}
+std::string GameState::GameStateToStringConverter() {
+    std::string str = "";
+    std::vector<char> vec;
+    for (int i = 1; i < 6; i++) {
+        for (int j = 1; j <= 6 - i; j++) {
+            if (atLocation(i, j) != nullptr) {
+                if (atLocation(i, j)->getTeam() == 1) {
+                    vec.push_back('B');
+                } else if (atLocation(i, j)->getTeam() == 2) {
+                    vec.push_back('R');
+                } else if (atLocation(i, j)->getTeam() == 3)
+                    vec.push_back('Y');
+            } else
+                vec.push_back('-');
+        }
+    }
+    for (int i = 0; i < vec.size(); i++)
+        str += vec[i];
+    // std::cout << str << std::endl;
+    return str;
+}
+//This prints the board in text format
+void GameState::printBoardInText() {
+    std::vector<char> vec;
+    for (int i = 1; i < 6; i++) {
+        for (int j = 1; j <= 6 - i; j++) {
+            if (atLocation(i, j) != nullptr) {
+                if (atLocation(i, j)->getTeam() == 1) {
+                    vec.push_back('B');
+                } else if (atLocation(i, j)->getTeam() == 2) {
+                    vec.push_back('R');
+                } else if (atLocation(i, j)->getTeam() == 3)
+                    vec.push_back('Y');
+            } else
+                vec.push_back('-');
+        }
+    }
+    //std::cout << vec.size();
+    ///Everything up to this point should have been needed to make a baord
+    //Printing it in the format people want
+    std::cout << " " << " " << " " << " " << vec[4] << std::endl;
+    std::cout << " " << " " << " " << vec[3] << " " << vec[8] << std::endl;
+    std::cout << " " << " " << vec[2] << " " << vec[7] << " " << vec[11] << std::endl;
+    std::cout << " " << vec[1] << " " << vec[6] << " " << vec[10] << " " << vec[13] << std::endl;
+    std::cout << vec[0] << " " << vec[5] << " " << vec[9] << " " << vec[12] << " " << vec[14] << std::endl;
 }

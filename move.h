@@ -27,9 +27,9 @@ public:
         _code = move_code;
     }
 
-    Piece *piece(){return _piece};
-    Position position(){ return  _position};
-    int code(){return _code};
+    Piece *piece(){return _piece;};
+    Position position(){ return  _position;};
+    int code(){return _code;};
 
 
 private:
