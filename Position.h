@@ -16,9 +16,17 @@ public:
     int x;
     int y;
 
+    Position() {
+        x = 0; y = 0;
+    }
     Position(int pos_x, int pos_y){
         x = pos_x; y = pos_y;
     };
+    Position&operator=(const Position& other) {
+        x = other.x;
+        y = other.y;
+        return *this;
+    }
 };
 
 #endif //PANDEMONIUM_C_CODE_POSITION_H
