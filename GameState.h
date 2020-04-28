@@ -23,6 +23,7 @@ const int ADJACENT_VECTORS[6][2] = {{1,0}, {0,1}, {-1, 1}, {-1, 0}, {0, -1}, {1,
 
 class GameState{
 public:
+    GameState();
     GameState(const GameState& other);
     ~GameState();
     void addPiece(int pos_x, int pos_y, int team, int type);

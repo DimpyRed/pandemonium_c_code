@@ -97,6 +97,12 @@
 		<Unit filename="C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/Position.h">
 			<Option target="Pandemonium_c_code"/>
 		</Unit>
+		<Unit filename="C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/controller.cpp">
+			<Option target="Pandemonium_c_code"/>
+		</Unit>
+		<Unit filename="C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/controller.h">
+			<Option target="Pandemonium_c_code"/>
+		</Unit>
 		<Unit filename="C:/Users/Nicholas/Documents/Nicolas Uribe/Nicholas/SSU Senior HW/CS 415/pandemonium_c_code/gameRules.cpp">
 			<Option target="Pandemonium_c_code"/>
 		</Unit>

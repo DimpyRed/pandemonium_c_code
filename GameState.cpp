@@ -4,6 +4,8 @@
 
 #include "GameState.h"
 
+GameState::GameState() {}
+
 GameState::GameState(const GameState &other) {
     for(int i = 0; i < other.pieces.size(); i++) {
         this->pieces.emplace_back(new Piece(
@@ -99,7 +101,12 @@ void GameState::removePiece(Piece *p) {
 }
 
 bool GameState::pieceExists(Piece *p) {
-    return onBoard(p->x, p->y);
+    for(int i = 0; i < pieces.size(); i++) {
+        if(pieces[i] == p) {
+            return true;
+        }
+    }
+    return false;
 }
 
 bool GameState::areAdjacent(Position pos_1, Position Pos_2) {

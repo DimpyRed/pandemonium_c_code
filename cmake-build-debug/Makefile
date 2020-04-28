@@ -176,6 +176,33 @@ Piece.cpp.s:
 	$(MAKE) -f CMakeFiles\Pandemonium_c_code.dir\build.make CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.s
 .PHONY : Piece.cpp.s
 
+controller.obj: controller.cpp.obj
+
+.PHONY : controller.obj
+
+# target to build an object file
+controller.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pandemonium_c_code.dir\build.make CMakeFiles/Pandemonium_c_code.dir/controller.cpp.obj
+.PHONY : controller.cpp.obj
+
+controller.i: controller.cpp.i
+
+.PHONY : controller.i
+
+# target to preprocess a source file
+controller.cpp.i:
+	$(MAKE) -f CMakeFiles\Pandemonium_c_code.dir\build.make CMakeFiles/Pandemonium_c_code.dir/controller.cpp.i
+.PHONY : controller.cpp.i
+
+controller.s: controller.cpp.s
+
+.PHONY : controller.s
+
+# target to generate assembly for a file
+controller.cpp.s:
+	$(MAKE) -f CMakeFiles\Pandemonium_c_code.dir\build.make CMakeFiles/Pandemonium_c_code.dir/controller.cpp.s
+.PHONY : controller.cpp.s
+
 gameRules.obj: gameRules.cpp.obj
 
 .PHONY : gameRules.obj
@@ -218,6 +245,9 @@ help:
 	@echo ... Piece.obj
 	@echo ... Piece.i
 	@echo ... Piece.s
+	@echo ... controller.obj
+	@echo ... controller.i
+	@echo ... controller.s
 	@echo ... gameRules.obj
 	@echo ... gameRules.i
 	@echo ... gameRules.s

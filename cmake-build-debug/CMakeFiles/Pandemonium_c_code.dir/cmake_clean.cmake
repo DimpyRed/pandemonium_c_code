@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pandemonium_c_code.dir/Piece.cpp.obj"
   "CMakeFiles/Pandemonium_c_code.dir/GameState.cpp.obj"
   "CMakeFiles/Pandemonium_c_code.dir/gameRules.cpp.obj"
+  "CMakeFiles/Pandemonium_c_code.dir/controller.cpp.obj"
   "Pandemonium_c_code.pdb"
   "Pandemonium_c_code.exe"
   "Pandemonium_c_code.exe.manifest"
